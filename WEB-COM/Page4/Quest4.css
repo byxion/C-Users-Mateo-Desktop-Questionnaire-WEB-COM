@@ -174,6 +174,44 @@ main {
     grid-area: Texte-BUT-int;
 }
 
+#Texte-Rest-Crous, #Texte-Idee-metier, #Texte-Pours-Etude, #Texte-BUT-int {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Texte-Rest-Crous > span, #Texte-Idee-metier > span, #Texte-Pours-Etude > span, #Texte-BUT-int > span {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+#Texte-Rest-Crous form label span, #Texte-Pours-Etude form label span,#Texte-BUT-int form label span {
+    font-size: 20px;
+}
+
+#Texte-Rest-Crous form, #Texte-BUT-int form {
+    display: grid; 
+    grid-template-columns: 50px 450px; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 20px 0em; 
+    grid-template-areas: 
+      ". ."
+      ". ."
+      "Valider Valider"; 
+}
+.Valider { grid-area: Valider; }
+#Texte-Pours-Etude form {
+    display: grid; 
+    grid-template-columns: 50px 450px; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 20px 0em; 
+    grid-template-areas: 
+      ". ."
+      ". ."
+      ". ."
+      "Valider Valider"; 
+}
 
 
 
