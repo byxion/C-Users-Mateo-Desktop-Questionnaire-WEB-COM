@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questionnaire page 3</title>
+    <link rel="stylesheet" href="Quest3.css" />
+    <script src="script.js" defer></script>
+    <script src="Quest3.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <h1>IUT Lyon 1</h1>
+        <img src="/Images/logo.png" alt="logo IUT" />
+        <input type="checkbox" id="check" />
+        <label for="check">
+          <i class="fas fa-chevron-circle-down"></i>
+        </label>
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Questionnaire 1</a></li>
+          <li><a href="/Page3/Quest3.html">Questionnaire 2</a></li>
+          <li><a href="/Page4/Quest4.html">Questionnaire 3</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="container">
+      <main>
+        <span class="container-pages">
+          <div class="page page-1">
+            <p>Possédez-vous un ordinateur récent ?</p>
+            <form method="post">
+              <input type="radio" id="cinq-ans" name="Ordinateur-Age" />
+              <label for="cinq-ans">Moins de 5 ans.</label><br />
+              <input type="radio" id="dix-ans" name="Ordinateur-Age" />
+              <label for="dix-ans">Moins de 10 ans.</label><br />
+              <input type="radio" id="dix-ans-plus" name="Ordinateur-Age" />
+              <label for="dix-ans-plus">Plus de 10 ans.</label>
+            </form>
+            <button>Suivant -></button>
+          </div>
+          <div class="page page-2">
+            <p>Aimeriez-vous travailler en alternance ?</p>
+            <form method="post">
+              <input type="radio" id="Oui" name="Alternance" />
+              <label for="Oui">Oui.</label><br />
+              <input type="radio" id="Non" name="Alternance" />
+              <label for="Non">Non.</label><br />
+              <input type="radio" id="Ne-Sait-Pas" name="Alternance" />
+              <label for="Ne-Sait-Pas">Je ne sais pas encore.</label>
+            </form>
+            <button>Suivant -></button>
+          </div>
+          <div class="page page-3">
+            <p>
+              Quelle est, selon vous, la quantité de travail nécessaire à
+              produire ?
+            </p>
+            <form method="post">
+              <input type="radio" id="Dur" name="Quantité-Travail" />
+              <label for="Dur">Travail rigoureux chaque soir.</label><br />
+              <input type="radio" id="Moyen" name="Quantité-Travail" />
+              <label for="Moyen">Travail seulement les week-end.</label><br />
+              <input type="radio" id="Facile" name="Quantité-Travail" />
+              <label for="Facile">Travail juste avant les examens.</label>
+            </form>
+            <button>Suivant -></button>
+          </div>
+          <div class="page page-4">
+            <p>Étes vous plutôt fêtard ou travailleur ?</p>
+            <form method="post">
+              <input type="radio" id="Fetard" name="type" />
+              <label for="Fetard">Fêtard.</label><br />
+              <input type="radio" id="Travailleur" name="type" />
+              <label for="Travailleur">Travailleur.</label><br />
+              <input type="radio" id="les-deux" name="type" />
+              <label for="les-deux">Les deux.</label>
+            </form>
+            <button class="final-submit">Validez</button>
+          </div>
+        </span>
+      </main>
+    </div>
+  </body>
+</html>

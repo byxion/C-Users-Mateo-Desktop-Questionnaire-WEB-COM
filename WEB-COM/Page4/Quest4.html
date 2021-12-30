@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/f06f56c2b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Questionnaire 3</title>
+    <link rel="stylesheet" href="Quest4.css" />
+    <script src="Quest4.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <nav id="navbar">
+        <h1>IUT Lyon 1</h1>
+        <img src="/Images/logo.png" alt="logo IUT" />
+        <input type="checkbox" id="check" />
+        <label for="check">
+          <i class="fas fa-chevron-circle-down"></i>
+        </label>
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Questionnaire 1</a></li>
+          <li><a href="/Page3/Quest3.html">Questionnaire 2</a></li>
+          <li><a href="/Page4/Quest4.html">Questionnaire 3</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="Container">
+      <main>
+        <img
+          src="/Images/Rest_Crous.jpg"
+          alt="Restaurant Universitaire"
+          id="Rest-Crous"
+        />
+        <div id="Texte-Rest-Crous">
+          <span>Où préférer-vous manger ?</span>
+          <form method="post">
+            <input type="radio" id="RU" name="Repas" />
+            <label for="RU"
+              >Au restaurant universitaire, pour rester concentré même durant
+              les repas.</label
+            ><br />
+            <input type="radio" id="Maison" name="Repas" />
+            <label for="Maison"
+              >Chez soi, faire une petite pause durant la journée.</label
+            ><br />
+            <input type="submit" value="Envoyer" />
+          </form>
+        </div>
+
+        <img
+          src="/Images/Idee_metier.jpg"
+          alt="Image d'informatique"
+          id="Idee-metier"
+        />
+        <div id="Texte-Idee-metier">
+          <form method="post">
+            <label for="Idee_metier"
+              >Dans quel métier vous vous voyez après le BUT ?</label
+            ><br />
+
+            <textarea id="Idee_metier" name="Metier">
+Je me vois dans ...</textarea
+            ><br />
+            <input type="submit" value="Envoyer" />
+          </form>
+        </div>
+
+        <img
+          src="/Images/Poursuite_Etude.jpg"
+          alt="Image d'informatique"
+          id="Pours-Etude"
+        />
+        <div id="Texte-Pours-Etude">
+          <span>Que pensez-vous faire, comme étude, après le BUT?</span>
+          <form method="post">
+            <input type="checkbox" id="Master" name="Etude" />
+            <label for="Master">Un master, tout simplement.</label><br />
+            <input type="checkbox" id="Ecole-Inge" name="Etude" />
+            <label for="Ecole-Inge"
+              >Une école d'ingénieur, avec un peu de travail.</label
+            ><br />
+            <input type="checkbox" id="Vie-Pro" name="Etude" />
+            <label for="Ecole-Inge">Directement dans la vie active.</label
+            ><br />
+            <input type="submit" value="Envoyer" />
+          </form>
+        </div>
+
+        <img src="/Images/BUT-int.jpg" alt="BUT" id="BUT-int" />
+        <div id="Texte-BUT-int">
+          <span
+            >Finalement pensez-vous que le BUT Info est fait pour vous ?</span
+          >
+          <form method="post">
+            <input type="radio" id="Oui" name="BUT" />
+            <label for="Oui">Oui.</label><br />
+            <input type="radio" id="Non" name="BUT" />
+            <label for="Non">Non.</label><br />
+            <input type="submit" value="Envoyer" />
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
