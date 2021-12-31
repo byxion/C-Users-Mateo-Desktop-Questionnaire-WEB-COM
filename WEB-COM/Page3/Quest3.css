@@ -80,7 +80,7 @@ main div button {
     background-color: black;
     border: none;
     border-radius: 15px;
-  }
+}
   
 main div button:hover {
     background-color: darkgray;
@@ -90,7 +90,7 @@ main div button:active {
     background-color: darkgray;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
-  }
+}
 
 main > .container-pages{
     display: flex;
@@ -121,8 +121,5 @@ main > .container-pages{
     }
     main div.page-4{
         margin: 75px 0 0 75px;
-    }
-    #container{
-        width: 80vw;
     }
 }

@@ -123,3 +123,28 @@ textarea {
 textarea::-webkit-scrollbar {
     width: 1em;
 }
+
+main div .Valider {
+    display: inline-block;
+    width: 300px;
+    padding: 15px 35px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+  }
+  
+main div .Valider:hover {
+    background-color: darkgray;
+}
+
+main div .Valider:active {
+    background-color: darkgray;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
