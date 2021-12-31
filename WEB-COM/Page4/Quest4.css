@@ -6,29 +6,31 @@
     font-family: 'Nunito', sans-serif;
 }
 
-
+body {
+    background-color: salmon;
+}
 #Container {
     display: flex;
     justify-content: center;
-    background-color: salmon;
 }
 
 main {
     display: grid;
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 0.5fr; 
     gap: 10% 2em; 
     grid-template-areas: 
       "Rest-Crous Texte-Rest-Crous"
       "Texte-Idee-metier Idee-metier"
       "Pours-Etude Texte-Pours-Etude"
-      "Texte-BUT-int BUT-int";
-    width: 70vw;
+      "Texte-BUT-int BUT-int"
+      "Texte-final Texte-final";
+    width: 66vw;
     margin-top: 130px;
 }
 #Rest-Crous {
     grid-area: Rest-Crous;
-    height: 350px; /* Mettre vers 350 */
+    height: 350px; 
     width: 640px;
 }
 #Texte-Rest-Crous {
@@ -60,6 +62,18 @@ main {
     grid-area: Texte-BUT-int;
 }
 
+#Texte-final {
+    grid-area: Texte-final;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10vh;
+}
+
+#Texte-final p {
+    width: 700px;
+}
+
+
 #Texte-Rest-Crous, #Texte-Idee-metier, #Texte-Pours-Etude, #Texte-BUT-int {
     display: flex;
     flex-direction: column;
@@ -72,11 +86,11 @@ main {
     margin-bottom: 30px;
 }
 
-#Texte-Rest-Crous form label span, #Texte-Pours-Etude form label span,#Texte-BUT-int form label span {
+#Texte-Rest-Crous form label span, #Texte-Pours-Etude div.formulaire label span,#Texte-BUT-int div.formulaire label span {
     font-size: 20px;
 }
 
-#Texte-Rest-Crous form, #Texte-BUT-int form {
+#Texte-Rest-Crous form, #Texte-BUT-int div.formulaire {
     display: grid; 
     grid-template-columns: 50px 450px; 
     grid-template-rows: 1fr 1fr 1fr; 
@@ -87,7 +101,7 @@ main {
       "Valider Valider"; 
 }
 .Valider { grid-area: Valider; }
-#Texte-Pours-Etude form {
+#Texte-Pours-Etude div.formulaire {
     display: grid; 
     grid-template-columns: 50px 450px; 
     grid-template-rows: 1fr 1fr 1fr 1fr; 
