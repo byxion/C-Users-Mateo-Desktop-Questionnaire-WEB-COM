@@ -73,7 +73,7 @@ nav i {
     display: none;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     nav {
         padding: 0px 25px 0px 25px;
         transition: 0.5s;
