@@ -25,7 +25,7 @@ main {
       "Pours-Etude Texte-Pours-Etude"
       "Texte-BUT-int BUT-int"
       "Texte-final Texte-final";
-    width: 66vw;
+    width: 70vw;
     margin-top: 130px;
 }
 #Rest-Crous {
@@ -113,7 +113,25 @@ main {
       ". ."
       "Valider Valider"; 
 }
+label {
+    padding-bottom: 10px;
+}
+input.check, input.checkbox {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 2px solid black;
+}
 
+input.check {
+    border-radius: 50%;
+}
+
+input.check:checked, input.checkbox:checked {
+    background-color: aliceblue;
+    transition: 0.3s;
+}
 
 textarea {
     resize: none;
@@ -141,13 +159,19 @@ main div .Valider {
 }
   
 main div .Valider:hover {
-    background-color: darkgray;
+    color: black;
+    background-color: aliceblue;
+    transition: 0.4s;
 }
 
 main div .Valider:active {
     background-color: darkgray;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+}
+
+img {
+    border-radius: 10%;
 }
 
 @media (max-width: 1300px) {

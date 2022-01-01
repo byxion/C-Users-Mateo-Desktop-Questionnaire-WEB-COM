@@ -24,8 +24,7 @@ main {
 
 main div {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     border-radius: 20px;
     width: 40vw;
@@ -67,7 +66,7 @@ main div.page-4 {
 
 }
 
-main div button {
+main div button, main div form button.final-submit {
     display: inline-block;
     margin: 25px;
     padding: 15px 35px;
@@ -82,14 +81,33 @@ main div button {
     border-radius: 15px;
 }
   
-main div button:hover {
-    background-color: darkgray;
+main div button:hover, main div form button.final-submit:hover {
+    color: black;
+    background-color: aliceblue;
+    transition: 0.4s;
 }
 
-main div button:active {
-    background-color: darkgray;
+main div button:active, main div form button.final-submit:active {
+    color: black;
+    background-color: aliceblue;
+    transition: 0.4s;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+}
+
+main div form {
+    display: grid; 
+    grid-template-columns: 30px 300px; 
+    grid-template-rows: auto;  
+    grid-template-areas: 
+      ". ."
+      ". ."
+      ". ."
+      "final-submit final-submit";
+}
+
+.final-submit {
+    grid-area: final-submit;
 }
 
 main > .container-pages{
@@ -106,10 +124,28 @@ main > .container-pages{
     position:absolute;
 } 
 
+input.check {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    border: 2px solid black;
+}
+
+input.check:checked {
+    background-color: aliceblue;
+    transition: 0.3s;
+}
+
 
 /* ***************** RESPONSIVE ************** */
-
-@media screen and (max-width: 800px) {
+@media (max-width: 1200px) {
+    main div.texte {
+        padding-bottom: 60px;
+    }
+}
+@media (max-width: 880px) {
     main div {
         width: 350px;
     }

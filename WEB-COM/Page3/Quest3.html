@@ -18,15 +18,21 @@
     </header>
     <div id="container">
       <main>
+        <div class="texte">
+          <p>
+            Dans cette deuxième series de questions, nous allons voir si vous disposez du matériel requis et voir dans quelle mentalité êtes-vous pour ce BUT qui est moins simple
+            qu'il n'y parait. 
+          </p>
+        </div>
         <span class="container-pages">
           <div class="page page-1">
             <p>Possédez-vous un ordinateur récent ?</p>
             <form method="post">
-              <input type="radio" id="cinq-ans" name="Ordinateur-Age" />
-              <label for="cinq-ans">Moins de 5 ans.</label><br />
-              <input type="radio" id="dix-ans" name="Ordinateur-Age" />
-              <label for="dix-ans">Moins de 10 ans.</label><br />
-              <input type="radio" id="dix-ans-plus" name="Ordinateur-Age" />
+              <input type="radio" id="cinq-ans" name="Ordinateur-Age" class="check"/>
+              <label for="cinq-ans">Moins de 5 ans.</label>
+              <input type="radio" id="dix-ans" name="Ordinateur-Age" class="check"/>
+              <label for="dix-ans">Moins de 10 ans.</label>
+              <input type="radio" id="dix-ans-plus" name="Ordinateur-Age" class="check"/>
               <label for="dix-ans-plus">Plus de 10 ans.</label>
             </form>
             <button>Suivant -></button>
@@ -34,11 +40,11 @@
           <div class="page page-2">
             <p>Aimeriez-vous travailler en alternance ?</p>
             <form method="post">
-              <input type="radio" id="Oui" name="Alternance" />
-              <label for="Oui">Oui.</label><br />
-              <input type="radio" id="Non" name="Alternance" />
-              <label for="Non">Non.</label><br />
-              <input type="radio" id="Ne-Sait-Pas" name="Alternance" />
+              <input type="radio" id="Oui" name="Alternance" class="check"/>
+              <label for="Oui">Oui.</label>
+              <input type="radio" id="Non" name="Alternance" class="check"/>
+              <label for="Non">Non.</label>
+              <input type="radio" id="Ne-Sait-Pas" name="Alternance" class="check"/>
               <label for="Ne-Sait-Pas">Je ne sais pas encore.</label>
             </form>
             <button>Suivant -></button>
@@ -49,26 +55,26 @@
               produire ?
             </p>
             <form method="post">
-              <input type="radio" id="Dur" name="Quantité-Travail" />
-              <label for="Dur">Travail rigoureux chaque soir.</label><br />
-              <input type="radio" id="Moyen" name="Quantité-Travail" />
-              <label for="Moyen">Travail seulement les week-end.</label><br />
-              <input type="radio" id="Facile" name="Quantité-Travail" />
+              <input type="radio" id="Dur" name="Quantité-Travail" class="check"/>
+              <label for="Dur">Travail rigoureux chaque soir.</label>
+              <input type="radio" id="Moyen" name="Quantité-Travail" class="check"/>
+              <label for="Moyen">Travail seulement les week-end.</label>
+              <input type="radio" id="Facile" name="Quantité-Travail" class="check"/>
               <label for="Facile">Travail juste avant les examens.</label>
             </form>
             <button>Suivant -></button>
           </div>
           <div class="page page-4">
             <p>Étes vous plutôt fêtard ou travailleur ?</p>
-            <form method="post">
-              <input type="radio" id="Fetard" name="type" />
-              <label for="Fetard">Fêtard.</label><br />
-              <input type="radio" id="Travailleur" name="type" />
-              <label for="Travailleur">Travailleur.</label><br />
-              <input type="radio" id="les-deux" name="type" />
+            <form method="post" action="/WEB-COM/Page4/Quest4.html">
+              <input type="radio" id="Fetard" name="type" class="check"/>
+              <label for="Fetard">Fêtard.</label>
+              <input type="radio" id="Travailleur" name="type" class="check"/>
+              <label for="Travailleur">Travailleur.</label>
+              <input type="radio" id="les-deux" name="type" class="check"/>
               <label for="les-deux">Les deux.</label>
+              <button class="final-submit">Validez</button>
             </form>
-            <button class="final-submit">Validez</button>
           </div>
         </span>
       </main>
