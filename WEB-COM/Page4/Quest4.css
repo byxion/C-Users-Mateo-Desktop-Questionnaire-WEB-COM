@@ -14,7 +14,7 @@ body {
     justify-content: center;
 }
 
-main {
+main form {
     display: grid;
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr 1fr 0.5fr; 
@@ -145,7 +145,7 @@ textarea::-webkit-scrollbar {
     width: 1em;
 }
 
-main div .Valider {
+main form div .Valider {
     display: inline-block;
     width: 300px;
     padding: 15px 35px;
@@ -160,13 +160,13 @@ main div .Valider {
     border-radius: 15px;
 }
   
-main div .Valider:hover {
+main form div .Valider:hover {
     color: black;
     background-color: aliceblue;
     transition: 0.4s;
 }
 
-main div .Valider:active {
+main form div .Valider:active {
     background-color: darkgray;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
@@ -176,14 +176,14 @@ img {
     border-radius: 10%;
 }
 @media (max-width: 1500px) {
-    main {
+    main form {
         width: auto;
         margin-left: 100px;
         margin-right: 100px;
     }
 }
 @media (max-width: 1300px) {
-    main {
+    main form {
         display: flex;
         flex-direction: column;
         align-items: center;
