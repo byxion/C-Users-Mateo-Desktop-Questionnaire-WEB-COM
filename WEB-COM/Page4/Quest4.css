@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: salmon;
+    background-color: cornsilk;
 }
 #Container {
     display: flex;
@@ -129,7 +129,7 @@ input.check {
 }
 
 input.check:checked, input.checkbox:checked {
-    background-color: aliceblue;
+    background-color: rgb(189, 189, 189);
     transition: 0.3s;
 }
 
@@ -137,6 +137,8 @@ textarea {
     resize: none;
     width: 500px;
     height: 150px;
+    background-color: whitesmoke;
+    color: black;
 }
 
 textarea::-webkit-scrollbar {
@@ -173,7 +175,13 @@ main div .Valider:active {
 img {
     border-radius: 10%;
 }
-
+@media (max-width: 1500px) {
+    main {
+        width: auto;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
 @media (max-width: 1300px) {
     main {
         display: flex;
