@@ -9,18 +9,32 @@
       crossorigin="anonymous"
     ></script>
     <title>Questionnaire 3</title>
-    <link rel="stylesheet" href="Quest4.css" />
+    <link rel="stylesheet" href="../Page4/Quest4.css" />
+    <link rel="stylesheet" href="NavBar/NavBar.css">
   </head>
 
   <body>
     <header>
-      <script id="replace_with_navbar" src="/WEB-COM/NavBar/nav.js"></script>
+      <nav id="navbar">
+        <h1>IUT Lyon 1</h1>
+        <img src="../Images/logo.png" alt="logo IUT" />
+        <input type="checkbox" id="check" />
+        <label for="check">
+          <i class="fas fa-chevron-circle-down"></i>
+        </label>
+        <ul>
+          <li><a href="../Page1/acceuil.html">Accueil</a></li>
+          <li><a href="../Page2/Quest2.html">Questionnaire 1</a></li>
+          <li><a href="../Page3/Quest3.html">Questionnaire 2</a></li>
+          <li><a href="../Page4/Quest4.html">Questionnaire 3</a></li>
+        </ul>
+      </nav>
     </header>
     <div id="Container">
       <main>
         <form method="post">
           <img
-            src="/WEB-COM/Images/Rest_Crous.jpg"
+            src="../Images/Rest_Crous.jpg"
             alt="Restaurant Universitaire"
             id="Rest-Crous"
           />
@@ -44,7 +58,7 @@
           </div>
 
           <img
-            src="/WEB-COM/Images/Idee_metier.jpg"
+            src="../Images/Idee_metier.jpg"
             alt="Image d'informatique"
             id="Idee-metier"
           />
@@ -58,7 +72,7 @@
           </div>
 
           <img
-            src="/WEB-COM/Images/Poursuite_Etude.jpg"
+            src="../Images/Poursuite_Etude.jpg"
             alt="Image d'informatique"
             id="Pours-Etude"
           />
@@ -96,7 +110,7 @@
               >
             </div>
           </div>
-          <img src="/WEB-COM/Images/BUT-int.jpg" alt="BUT" id="BUT-int" />
+          <img src="../Images/BUT-int.jpg" alt="BUT" id="BUT-int" />
           <div id="Texte-BUT-int">
             <span
               >Finalement pensez-vous que le BUT Info est fait pour vous ?</span

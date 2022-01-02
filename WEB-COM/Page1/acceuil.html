@@ -9,23 +9,37 @@
     crossorigin="anonymous"
   ></script>
     <title>IUT Lyon 1</title>
-    <link rel="stylesheet" href="/WEB-COM/Page1/acceuil.css">
+    <link rel="stylesheet" href="../Page1/acceuil.css">
+    <link rel="stylesheet" href="../Page1/NavBar/NavBar.css">
 </head>
 
 <body>
     <header>
-        <script id="replace_with_navbar" src="/WEB-COM/NavBar/nav.js"></script>
+        <nav id="navbar">
+            <h1>IUT Lyon 1</h1>
+            <img src="../Images/logo.png" alt="logo IUT" />
+            <input type="checkbox" id="check" />
+            <label for="check">
+              <i class="fas fa-chevron-circle-down"></i>
+            </label>
+            <ul>
+              <li><a href="../Page1/acceuil.html">Accueil</a></li>
+              <li><a href="../Page2/Quest2.html">Questionnaire 1</a></li>
+              <li><a href="../Page3/Quest3.html">Questionnaire 2</a></li>
+              <li><a href="../Page4/Quest4.html">Questionnaire 3</a></li>
+            </ul>
+        </nav>
     </header>
     <div class="sec1">
         <div class="container">
-            <img src="/WEB-COM/Images/logo.png" alt="">
+            <img src="../Images/logo.png" alt="">
             <h1><i>"L'excellence Technologique"</i></h1>
         </div>
     </div>
     <div class="sec2">
         <div class="container">
             <h1>Le BUT (Bachelor Universitaire et Technologique)
-                est une nouvelle fromation remplacant le 
+                est une nouvelle formation remplacant le 
                 DUT. C'est une formation professionalisante
                 se déroullant sur sur 3 ans avec alternance 
                 possible selon le type de BUT. Pour le BUT info,
@@ -45,7 +59,7 @@
                 Pour commencer le questionnaire, cliquez sur
                 le bouton en bas de la page.
             </h2>
-            <form action="/WEB-COM/Page2/Quest2.html" target="_blank">
+            <form action="../Page2/Quest2.html" target="_blank">
                 <button>Démarrer le questionnaire</button>
             </form>
         </div>
@@ -58,25 +72,25 @@
 
         <form action="https://www.univ-lyon1.fr/facebook" target="_blank">
             <button >
-                <img src="/WEB-COM/Images/logoFB.png" alt="">
+                <img src="../Images/logoFB.png" alt="">
             </button>
         </form>
 
         <form action="https://www.univ-lyon1.fr/twitter" target="_blank">
             <button class="deux">
-                <img src="/WEB-COM/Images/logotwitter.png" alt="">
+                <img src="../Images/logotwitter.png" alt="">
             </button>
         </form>
 
         <form action="https://www.univ-lyon1.fr/youtube" target="_blank">
             <button class="trois">
-                <img src="/WEB-COM/Images/logoYT.png" alt="">
+                <img src="../Images/logoYT.png" alt="">
             </button>
         </form>
 
         <form action="https://www.univ-lyon1.fr/instagram" target="_blank">
             <button class="quatre">
-                <img src="/WEB-COM/Images/logoInsta.png" alt="">
+                <img src="../Images/logoInsta.png" alt="">
             </button>
         </form>
 

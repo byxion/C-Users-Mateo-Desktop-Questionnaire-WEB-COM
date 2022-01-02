@@ -18,7 +18,7 @@ body{
 @media (min-width: 1300px){
     .sec1{
         height: 100vh;
-        background-image: url(/WEB-COM/Images/cercle.jpg);
+        background-image: url(../Images/cercle.jpg);
         width: 100%;
         background-repeat: no-repeat;
         background-position: top right;
@@ -43,7 +43,7 @@ body{
     .sec1{
         height: 90vh;
         width: 100%;
-        background-image: url(/WEB-COM/Images/rondbleu.jpg);
+        background-image: url(../Images/rondbleu.jpg);
         background-repeat: no-repeat;
         background-position: bottom center;
         margin-bottom: 15vh;
@@ -80,7 +80,7 @@ body{
 @media (min-width: 1300px){
     .sec2{
         height: 100vh;
-        background-image: url(/WEB-COM/Images/ligne.jpg);
+        background-image: url(../Images/ligne.jpg);
         width: 100%;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -100,7 +100,7 @@ body{
 @media (max-width: 1299px){
     .sec2{
         height: 100vh;
-        background-image: url(/WEB-COM/Images/ligne.jpg);
+        background-image: url(../Images/ligne.jpg);
         width: 100%;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -129,7 +129,7 @@ body{
         width: 100%;
         display: flex;
         justify-content: center;
-        background-image: url(/WEB-COM/Images/fond-bot.png);
+        background-image: url(../Images/fond-bot.png);
         background-repeat: no-repeat;
         background-position: bottom;
         background-size: 100%;
@@ -162,7 +162,7 @@ body{
         width: 100%;
         display: flex;
         justify-content: center;
-        background-image: url(/WEB-COM/Images/fond-bot.png);
+        background-image: url(../Images/fond-bot.png);
         background-repeat: no-repeat;
         background-position: bottom;
         background-size: 100%;
