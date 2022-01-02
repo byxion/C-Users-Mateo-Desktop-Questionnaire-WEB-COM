@@ -11,6 +11,7 @@
     <title>Le BUT info est-il fait pour vous ?</title>
     <link rel="stylesheet" href="/WEB-COM/Page2/Quest2.css">
 </head>
+
 <body>
     <header>
         <script id="replace_with_navbar" src="/WEB-COM/NavBar/nav.js"></script>
@@ -20,9 +21,14 @@
             <div class="container">
                 <h1>Que signifie "BUT" ?</h1>
                 <div class="reponses">
-                    <h2>Bachelor Universitaire et Technologique.</h2>
-                    <h2>C'est une entreprise non ???</h2>
-                    <h2>C'est un objectif qu'on se fixe.</h2>
+                    <form method="post">
+                        <input type="radio" id="vraie" name="BUT" class="check"/>
+                        <label for="vraie" class="check">Bachelor Universitaire et Technologique.</label>
+                        <input type="radio" id="non" name="BUT" class="check"/>
+                        <label for="non" class="check">C'est une entreprise non ???</label>
+                        <input type="radio" id="faux" name="BUT" class="check"/>
+                        <label for="faux" class="check">C'est un objectif qu'on se fixe.</label>
+                      </form>
                 </div>
             </div>
         </div>
@@ -31,9 +37,14 @@
             <div class="container">
                 <h1>Aimez vous le domaine de l'informatique ?</h1>
                 <div class="reponses">
-                    <h2>OUI !!!</h2>
-                    <h2>Sa m'intéresse.</h2>
-                    <h2>Bof...</h2>
+                    <form method="post">
+                        <input type="radio" id="oui" name="interet" class="check"/>
+                        <label for="oui" class="check">Bachelor Universitaire et Technologique.</label>
+                        <input type="radio" id="unpeu" name="interet" class="check"/>
+                        <label for="unpeu" class="check">C'est une entreprise non ???</label>
+                        <input type="radio" id="bof" name="interet" class="check"/>
+                        <label for="bof" class="check">C'est un objectif qu'on se fixe.</label>
+                      </form>
                 </div>
             </div>
         </div>
@@ -42,14 +53,21 @@
             <div class="container">
                 <h1>Quels sont les prérequis nécessaires ?</h1>
                 <div class="reponses">
-                    <h2>Aucun, j'y vais au talent.</h2>
-                    <h2>Un peu de motivation et on croise les doigts</h2>
-                    <h2>Au moin un bac général ou technologique</h2>
+                    <form method="post">
+                        <input type="radio" id="audace" name="prerequis" class="check"/>
+                        <label for="audace"class="check">Aucun, j'y vais au talent.</label>
+                        <input type="radio" id="motivation" name="prerequis" class="check"/>
+                        <label for="motivation"class="check">Un peu de motivation et on croise les doigts</label>
+                        <input type="radio" id="normal" name="prerequis" class="check"/>
+                        <label for="normal" class="check">Au moin un bac général ou technologique </label>
+                      </form>
                 </div>
             </div>
         </div>
         <div class="boutton">
-            <button>Suivant ></button>
+            <form action="/WEB-COM/Page2/Quest3.html">
+                <button>Suivant ></button>
+            </form>
         </div>
     </main>
    

@@ -12,6 +12,7 @@ body {
 #Container {
     display: flex;
     justify-content: center;
+    height: auto;
 }
 
 main form {
@@ -175,6 +176,8 @@ main form div .Valider:active {
 img {
     border-radius: 10%;
 }
+
+/* RESPONSIVE */
 @media (max-width: 1500px) {
     main form {
         width: auto;
