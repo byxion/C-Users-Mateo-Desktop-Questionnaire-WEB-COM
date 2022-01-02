@@ -49,6 +49,7 @@ body{
         margin-bottom: 15vh;
         display: flex;
         justify-content: center;
+        padding-top: 100px;
     }
     .sec1 .container{
         width: 650px;
