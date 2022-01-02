@@ -144,10 +144,13 @@ input.check:checked {
     main div.texte {
         padding-bottom: 60px;
     }
+    main div form {
+        margin-top: 10px;
+    }
 }
 @media (max-width: 880px) {
     main div {
-        width: 350px;
+        width: 400px;
     }
     main div.page-2{
         margin: 25px 0 0 25px;
