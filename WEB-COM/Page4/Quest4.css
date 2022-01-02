@@ -178,8 +178,6 @@ img {
 @media (max-width: 1500px) {
     main form {
         width: auto;
-        margin-left: 100px;
-        margin-right: 100px;
     }
 }
 @media (max-width: 1300px) {
