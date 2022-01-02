@@ -87,11 +87,11 @@ main form {
     margin-bottom: 30px;
 }
 
-#Texte-Rest-Crous form label span, #Texte-Pours-Etude div.formulaire label span,#Texte-BUT-int div.formulaire label span {
+#Texte-Rest-Crous div.formulaire label span, #Texte-Pours-Etude div.formulaire label span,#Texte-BUT-int div.formulaire label span {
     font-size: 20px;
 }
 
-#Texte-Rest-Crous form, #Texte-BUT-int div.formulaire {
+#Texte-Rest-Crous div.formulaire, #Texte-BUT-int div.formulaire {
     display: grid; 
     grid-template-columns: 50px 450px; 
     grid-template-rows: 1fr 1fr 1fr; 
